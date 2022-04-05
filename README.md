@@ -1,7 +1,7 @@
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Shea690901&count_private=true&show_icons=true&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
-
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Shea690901&layout=compact&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
 
+[my OpenPGP key (openpgp4fpr:A34E981D571C83F4B59C07120648490248D99990)](https://keyoxide.org/A34E981D571C83F4B59C07120648490248D99990)
 <!--
 **Shea690901/Shea690901** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
