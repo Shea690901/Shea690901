@@ -1,0 +1,39 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+default_stages: [pre-commit,pre-merge-commit]
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.4.0
+  hooks:
+  - id: detect-private-key
+  - id: trailing-whitespace
+    args: [--markdown-linebreak-ext=md, --markdown-linebreak-ext=dox]
+  - id: fix-byte-order-marker
+  - id: end-of-file-fixer
+  - id: check-yaml
+  - id: check-xml
+  - id: check-added-large-files
+  - id: check-case-conflict
+  - id: check-executables-have-shebangs
+  - id: check-merge-conflict
+- repo: https://github.com/gitleaks/gitleaks
+  rev: v8.16.3
+  hooks:
+  - id: gitleaks
+- repo: https://github.com/rhysd/actionlint
+  rev: v1.6.24
+  hooks:
+  - id: actionlint
+- repo: local
+  hooks:
+  - id: interpret-trailer
+    name: interpret-trailer
+    language: system
+    entry: git interpret-trailers
+    args: [--trim-empty,--in-place,--unfold]
+    stages: [commit-msg]
+- repo: https://github.com/jorisroovers/gitlint
+  rev: v0.19.1
+  hooks:
+  - id: gitlint
+    stages: [commit-msg]
